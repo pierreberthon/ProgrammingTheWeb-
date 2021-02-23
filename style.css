@@ -1,3 +1,39 @@
-.container{
+body {
+  background-color: #F47E7C
+}
+
+h2 {
+  font-family: 'Oi', cursive;
+}
+
+.container { 
   text-align: center;
+}
+
+.banner {
+  display: grid;
+  margin-top: 20px;
+  border: 2px solid;
+  background-image: url("https://media.giphy.com/media/54YfNuR468yreuR3Ze/source.gif");
+  background-position:  middle;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 280px;
+  align-items: center;
+}
+
+.content {
+  margin-top: 50px;
+}
+
+.three {
+  border: 2px solid;
+  border-radius: 1px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.three > img {
+  object-fit: cover;
+  height: 100%;
 }
