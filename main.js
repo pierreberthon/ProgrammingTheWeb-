@@ -1,9 +1,9 @@
 $(".button").on('click', function() {
-  console.log('wait a moment please!')
+  const tvShows = []
+  $.getJSON('https://api.tvmaze.com/search/shows?q=silicon-valley', function(myDataset) {
+    myDataset.forEach((element) => {
+      console.log(element.show);
+      tvShows.push(element);
+    });
+  });
 });
-
-const tvShows = []
-
-
-
-
